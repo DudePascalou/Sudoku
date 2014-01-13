@@ -1,15 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Core", "Sudoku.Core\Sudoku.Core.csproj", "{C8A7E59E-7121-447E-A900-049DE67BB99A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Core.Tests", "Sudoku.Core.Tests\Sudoku.Core.Tests.csproj", "{7FDBB038-C0F7-42B1-AC89-ACABF9E20ACC}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9F04ADB-1F22-47D8-B3AA-0EA961AA7451}"
 	ProjectSection(SolutionItems) = preProject
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		Sudoku.vsmdi = Sudoku.vsmdi
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Core", "Sudoku.Core\Sudoku.Core.csproj", "{C8A7E59E-7121-447E-A900-049DE67BB99A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Core.Tests", "Sudoku.Core.Tests\Sudoku.Core.Tests.csproj", "{7FDBB038-C0F7-42B1-AC89-ACABF9E20ACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.UI.Winforms", "Sudoku.UI.Winforms\Sudoku.UI.Winforms.csproj", "{84A744F8-9D9A-4FD2-9BDC-10188323A21F}"
 EndProject
