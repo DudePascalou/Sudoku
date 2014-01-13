@@ -137,43 +137,49 @@ namespace Sudoku.Core.Tests
 
             target = new Cell();
             target.RemoveCandidate(2);
-            expected = new bool[9] { false, false, true, true, true, true, true, true, true };
+            expected = new bool[9] { true, false, true, true, true, true, true, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(3);
-            expected = new bool[9] { false, false, false, true, true, true, true, true, true };
+            expected = new bool[9] { true, true, false, true, true, true, true, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(4);
-            expected = new bool[9] { false, false, false, false, true, true, true, true, true };
+            expected = new bool[9] { true, true, true, false, true, true, true, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(5);
-            expected = new bool[9] { false, false, false, false, false, true, true, true, true };
+            expected = new bool[9] { true, true, true, true, false, true, true, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(6);
-            expected = new bool[9] { false, false, false, false, false, false, true, true, true };
+            expected = new bool[9] { true, true, true, true, true, false, true, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(7);
-            expected = new bool[9] { false, false, false, false, false, false, false, true, true };
+            expected = new bool[9] { true, true, true, true, true, true, false, true, true };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
 
             target = new Cell();
             target.RemoveCandidate(8);
-            expected = new bool[9] { false, false, false, false, false, false, false, false, true };
+            expected = new bool[9] { true, true, true, true, true, true, true, false, true };
+            actual = target.Candidates;
+            CollectionAssert.AreEqual(expected, actual);
+
+            target = new Cell();
+            target.RemoveCandidate(9);
+            expected = new bool[9] { true, true, true, true, true, true, true, true, false };
             actual = target.Candidates;
             CollectionAssert.AreEqual(expected, actual);
         }

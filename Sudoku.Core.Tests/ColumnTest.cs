@@ -33,9 +33,10 @@ namespace Sudoku.Core.Tests
         {
             int index = 0; // TODO: Initialize to an appropriate value
             Column target = new Column(index); // TODO: Initialize to an appropriate value
+            Cell[] expected = new Cell[9];
             Cell[] actual;
             actual = target.Cells;
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            CollectionAssert.AreEqual(expected, actual);
         }
 
 
@@ -47,7 +48,7 @@ namespace Sudoku.Core.Tests
         {
             int index = 1;
             Column target = new Column(index);
-            string expected = "C1";
+            string expected = "C2";
             string actual;
             actual = target.ToString();
             Assert.AreEqual(expected, actual);
